@@ -1,0 +1,10 @@
+html { width:100%; margin:0; height: auto; margin: 0px;}
+body { margin:0px; overflow-x: hidden;}
+* { margin: 0; }
+a img{border:0;}
+a {cursor:pointer; text-decoration:none }
+
+body {background-color: red}
+
+h1 {color:#0000FF;}
+h2{color:#FF0000;}
