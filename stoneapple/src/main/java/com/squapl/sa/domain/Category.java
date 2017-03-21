@@ -1,5 +1,6 @@
 package com.squapl.sa.domain;
 
+import java.math.BigInteger;
 import java.sql.Timestamp;
 
 import javax.persistence.Entity;
@@ -8,13 +9,15 @@ import javax.persistence.Id;
 @Entity
 public class Category {
 
-	@GeneratedValue
+	
 	@Id
-	private int idcategory;
+	@GeneratedValue
+	private long idcategory;
 	private String category_value;
 	private Timestamp updated_date;
 	private String updated_by;
-	public int getIdcategory() {
+	
+	public long getIdcategory() {
 		return idcategory;
 	}
 	public void setIdcategory(int idcategory) {

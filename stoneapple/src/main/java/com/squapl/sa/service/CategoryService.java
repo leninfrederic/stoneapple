@@ -7,8 +7,12 @@ import com.squapl.sa.domain.Category;
 
 public interface CategoryService {
 
-	Collection<Category> findAll();
+	Collection<Category> findall();
  
-	Category add(Category category);
+	Category adding(Category category);
+	
+	Category findonebyid(Long idcategory);
+	
+	void deleting(Long idcategory);
 
 }
