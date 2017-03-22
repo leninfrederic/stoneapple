@@ -1,6 +1,5 @@
 package com.squapl.sa.domain;
 
-import java.math.BigInteger;
 import java.sql.Timestamp;
 
 import javax.persistence.Entity;
@@ -42,7 +41,7 @@ public class Category {
 		this.updated_by = updated_by;
 	}
 	public Category(int idcategory, String category_value, Timestamp updated_date, String updated_by) {
-		super();
+		
 		this.idcategory = idcategory;
 		this.category_value = category_value;
 		this.updated_date = updated_date;

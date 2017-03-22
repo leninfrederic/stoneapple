@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
+import com.squapl.sa.domain.Article;
 import com.squapl.sa.domain.Category;
 import com.squapl.sa.domain.CategoryRepository;
 
@@ -40,4 +41,6 @@ public class CategoryServiceBean implements CategoryService {
 	public void deleting(Long idcategory){
 		categoryrepository.delete(idcategory);
 	}
+
+	
 }

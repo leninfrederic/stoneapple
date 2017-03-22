@@ -59,6 +59,7 @@ public class Article {
 		this.published_timestamp = published_timestamp;
 	}	
 	
+	
 	 @Override
     public String toString() {
         return "Article{" + "idarticle='" + idarticle + '\'' + ", art_title_en='" + art_title_en + '\'' + '}';
