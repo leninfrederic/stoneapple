@@ -2,7 +2,6 @@ package com.squapl.sa.service;
 
 import java.util.Collection;
 
-import com.squapl.sa.domain.Category;
 import com.squapl.sa.domain.Tagstbl;
 
 public interface TagstblService {

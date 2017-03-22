@@ -13,8 +13,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.squapl.sa.domain.Article;
-import com.squapl.sa.domain.Category;
 import com.squapl.sa.domain.Tagstbl;
 import com.squapl.sa.service.TagstblService;
 
@@ -85,19 +83,14 @@ public class TagstblController {
 	 @RequestMapping(
 			 value = "api/tagstbls/{id}",
 			 method = RequestMethod.PUT,
-			 consumes = MediaType.APPLICATION_JSON_VALUE,
+			 consumes = MediaType.APPLICATION_JSON_VALUE,	
 			 produces = MediaType.APPLICATION_JSON_VALUE)
-	 
+	 		
 		 public ResponseEntity<Tagstbl> updateTagstbl(
 		            @RequestBody Tagstbl tagstbl) {
-		 
-	    	logger.info("> updateTagstbl id:{}", tagstbl.getIdtags());
-
 			 
 		 Tagstbl savedtagstbl = tagstblservice.update(tagstbl);
 		 
-	    	logger.info("> updateTagstbl id:{}", tagstbl.getIdtags());
-
-		 return new ResponseEntity<Tagstbl>(savedtagstbl,HttpStatus.OK);
+		 return new ResponseEntity<Tagstbl>(savedtagstbl,HttpStatus.CREATED);
 	 }
 }

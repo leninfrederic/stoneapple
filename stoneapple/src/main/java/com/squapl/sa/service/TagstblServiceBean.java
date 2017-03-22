@@ -5,8 +5,6 @@ import java.util.Collection;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.squapl.sa.domain.Article;
-import com.squapl.sa.domain.Category;
 import com.squapl.sa.domain.Tagstbl;
 import com.squapl.sa.domain.TagstblRepository;
 
@@ -48,8 +46,6 @@ public class TagstblServiceBean implements TagstblService {
 	@Override
 	public Tagstbl update(Tagstbl tagstbl) {
 		// TODO Auto-generated method stub
-		Tagstbl tagstblPersisted = findonebyid(tagstbl.getIdtags());
-
 		Tagstbl updatedtagstbl = tagstblrepository.save(tagstbl);
 		return updatedtagstbl;
 	}
